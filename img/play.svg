@@ -1,0 +1,13 @@
+<svg
+    width="45"
+    height="45"
+    viewBox="0 0 100 100"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <!-- Circle Background -->
+    <circle cx="50" cy="50" r="45" fill="white" stroke="black" stroke-width="10" />
+    
+    <!-- Play Triangle (shifted left slightly) -->
+    <polygon points="38,30 70,50 38,70" fill="black" />
+</svg>

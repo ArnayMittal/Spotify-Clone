@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify:Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <!-- <img src="logo.svg" alt="LOGO"> -->
+    <div class="container flex bg-black">
+        <div class="left bg-black">
+            <div class="close invert">
+                <img src="img/close.svg" alt="CLOSE">
+            </div>
+            <div class="home rounded m1 bg-grey p1">
+                <div class="spotify"><img src="img/logo.svg" alt="LOGO" class="invert p1"><h1>Spotify</h1></div>
+                <ul>
+                    <li><img src="img/home.svg" alt="HOME" class="invert">Home</li>
+                    <li><img src="img/search.svg" alt="HOME" class="invert">Search</li>
+                </ul>
+            </div>
+            <div class="library rounded m1 bg-grey flex">
+                <h2 class="library-title">Your Library</h2>
+                <div class="songs flex">
+                    <ul>
+                       
+                    </ul>
+                </div>
+                <div class="plus invert p1"><img src="img/plus.svg" alt="PLUS"></div>
+                <div class = "footer">
+                    <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank">Cookies</a>
+                </div>
+            </div>
+           
+        </div>
+        <div class="right bg-black">
+            <div class="header flex rounded m1 bg-grey p1">
+                <div class="nav flex">
+                    <div class="add invert">
+                        <img src="img/library.svg" alt="LIBRARY">
+                    </div>
+                    <div class="leftarrow mtop "><img src="img/leftarrow.svg" alt="PREVIOUS" class="invert"></div>
+                    <div class="rightarrow mtop "><img src="img/rightarrow.svg" alt = "NEXT" class="invert"></div>
+                </div>
+                <div class="button">
+                    <button class="b1 ">Sign Up</button>
+                    <button class="b2 ">Login</button>
+                </div>
+            </div>
+            <div class="spotifyplaylist bg-grey m1 p1">
+                <h2>Trending Songs</h2>
+                <div class="cardcontainer">
+                    <!-- <div data-folder="1" class="card"  >
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="10" fill="limegreen"/> 
+                            <polygon points="9,7 17,12 9,17" fill="black"/>
+                        </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0286eb61be5784dcfbff4ed1ad" alt="Song">
+                        <h3>Run It Up</h3>
+                        <p>Hanumankind</p>
+                    </div>
+                    <div data-folder = "2" class="card"  >
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="10" fill="limegreen"/>
+                            <polygon points="9,7 17,12 9,17" fill="black"/>
+                        </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0201b171a2546ed723129f65cf" alt="Song">
+                        <h3>Vartmaan</h3>
+                        <p>UNIYAL, Soumya Rawat</p>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="topartist bg-grey m1 p1">
+                <h2>Top Artist</h2>
+                <div class="cardcontainer">
+                    <div class="card" >
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="10" fill="limegreen"/> 
+                            <polygon points="9,7 17,12 9,17" fill="black"/>
+                        </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0286eb61be5784dcfbff4ed1ad" alt="Song">
+                        <h3>Run It Up</h3>
+                        <p>Hanumankind</p>
+                    </div>
+                    <div class="card" >
+                        <div class="play"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle cx="12" cy="12" r="10" fill="limegreen"/>
+                            <polygon points="9,7 17,12 9,17" fill="black"/>
+                        </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0201b171a2546ed723129f65cf" alt="Song">
+                        <h3>Vartmaan</h3>
+                        <p>UNIYAL, Soumya Rawat</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="playbar">
+            <div class="seekbar">
+                <div class="circle"></div>
+            </div>
+            <div class="songinfo">
+
+            </div>
+            <div class="playbuttons">
+                <img id = "previous" src = "img/previous.svg" alt="PREVIOUS">
+                <img id = "play" src = "img/play.svg" alt = "PLAY">
+                <img id = "next" src = "img/next.svg" alt="NEXT">
+            </div>
+            <div class="songtimendvolume">
+                <div class="songtime">
+                </div>
+                <div class="volume invert">
+                    <img src="img/volume.svg" alt="VOLUME">
+                    <div class="range">
+                        <input type="range"  name="volume" id="">
+                    </div>
+                  
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

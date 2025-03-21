@@ -1,0 +1,403 @@
+ body{
+    background-color: black ;
+    color: white;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px ;
+    font-family: "Heebo", sans-serif;
+ }
+
+
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+
+.right{
+    width: 75vw;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+
+.home ul li{
+    display : flex ;
+    gap : 15px ;
+    width : 14px ;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.spotify{
+    display :flex;
+    align-items: center;
+    justify-content : left ; 
+    font-size: large;
+    margin-left: -16px;
+} 
+
+.library-title
+{
+    margin-left: 10px;
+}
+
+.plus {
+    gap : 15px ;
+    width : 14px ;
+    padding-top: 2px;
+    margin-left: auto;
+    margin-top: -2px;
+} 
+
+.library{
+    padding-top: 12px;
+    min-height: 72vh;
+    position: relative ;
+}
+
+.footer{
+    font-size: 10px;
+    position: absolute ;
+    bottom: 0;
+    padding: 10px;
+}
+
+.footer a{
+    color: grey;
+    margin: 10px;
+    
+}
+
+.button{
+    margin-left: auto;
+    margin-top: 8px;
+    width: 15vw;
+    display: flex;
+}
+
+.nav{
+    position: relative;
+    padding: 7px;
+    width: 20px ;
+    height: 10px;
+}
+
+.songs{
+    position: absolute;
+    left: 18px;
+    top: 51px;
+    overflow: scroll;
+    max-height: 55vh;
+    width: 400px;
+}
+
+
+
+.songs ul li{
+    height: 6vh;
+    font-size:smaller;
+    min-width: 21w;
+    list-style: none;
+    padding: 4px;
+    font-weight: 100;
+    display:flex;
+    margin-top: 25px;
+    margin-bottom: 2px;
+    cursor: pointer;
+}
+
+.songs ul li:hover{
+    background-color: grey;
+    border-radius: 10px;
+}
+
+
+.songs ul li div{
+    padding: 4px;
+    width: 15vw;
+    margin-left: 5px;
+    margin-top: 4px;
+    margin-right: 0px;
+}
+
+
+.b1{
+    /* margin-right : 15px;
+    padding : 5px;
+    background: none;  
+    border: none;
+    color: grey; */
+    margin-right: 10px;
+    padding : 5px;
+    width: 75px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: rgb(94, 94, 94);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.b1:hover{
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(162, 162, 162, 0.8);
+}
+
+.b2{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    padding : 5px;
+    width: 75px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.b2:hover{
+    box-shadow: 0 0 10px rgba(162, 162, 162, 0.8);
+}
+
+.spotifyplaylist h2{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.card{
+    width: 140px;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative ;
+    
+}
+
+.cardcontainer{
+    display:flex ;
+    gap:10px ;
+    flex-wrap: wrap;
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+.cardcontainer :hover{
+    background-color: rgb(39, 38, 38);
+}
+
+
+
+.card img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    margin-bottom: 3px;
+}
+
+.card p{
+    font-size: 12px;
+    font-style:initial;
+}
+
+.card p:hover{
+    text-decoration: underline;
+}
+
+.play{
+    position: absolute;
+    bottom: 67px;
+    right: 20px;
+    opacity: 0;
+}
+
+ .hi{
+    position: absolute ;
+   left: 245px;
+} 
+
+.card:hover .play{
+    opacity: 1;
+}
+
+.playbar{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 71%;
+        background: #000000;
+        height: 7vh;
+        color: #fff; /* White text */
+        padding: 15px 20px;
+        text-align: center;
+        font-size: 16px;
+        z-index: 1000;
+        display: flex;
+}
+
+.songinfo{
+    position: absolute;
+    top: 10px;
+    left: 3vw;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    background-color: rgb(9, 255, 0);
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 400;
+}
+
+.songtimendvolume{
+    display: flex;
+}
+
+.songtime{
+    position: absolute;
+    top: 15px;
+    right: 12vw;
+    font-size: large;
+    color: rgb(255, 255, 255);
+}
+.range input{
+    cursor: pointer;
+}
+
+.volume{
+    position: absolute;
+    top: 10px;
+    right: 3vw;
+    cursor: pointer;
+}
+
+.playbuttons{
+    position: absolute ;
+    top: 0px;
+    left: 30vw;
+}
+
+.seekbar{
+    height: 5px;
+    width:38vw ;
+    background-color: white;
+    position: absolute;
+    bottom : 18px;
+    left : 16vw;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 12px ;
+    height: 12px ;
+    background-color: white;
+    position: absolute;
+    border-radius: 50px;
+    bottom : -4px;
+    left:0%;
+    transition: left 0.5s;
+}
+ 
+.add{
+    display: none;
+    margin-top: 5px;
+    cursor: pointer;
+
+} 
+
+.close{
+    position: absolute ;
+    right: 35px;
+    top: 25px;
+}
+
+
+@media (max-width: 1250px) {
+    .left{
+        position: absolute;
+        left: -250%;
+        transition: all .3s;
+        width: 350px;
+        z-index: 1;
+    }
+    .right{
+        width: 99vw;
+    }
+    .playbar{
+        width: 98%;
+    }
+    .playbuttons{
+        left: 50vw;
+    }
+    .seekbar{
+        left : 37.5vw;
+        bottom: 3vh;
+    }
+    .add{
+        display: block;
+    }
+    .b1{
+        margin-left: -10vw ;
+    }
+    .playbar{
+        width: 92%;
+        height: 10vh;
+    }
+    .songinfo{
+        margin-top: 1vh;
+        font-size: smaller;
+        max-width: 40vw;
+    }
+    .playbuttons{
+        margin-top: 2vh;
+    }
+    .songtime{
+        margin-top: 1vh;
+        right: 16vw;
+        font-size: 10px;
+    }
+    .volume{
+        top: 15px;
+        left: 82vw;
+    }
+    input[type="range"] {
+        width: 75px; /* Set a smaller width */
+        height: 5px; 
+        transition: all .3s ;
+    }
+    #previous{
+        width: 4vh ;
+        height: 4vh;
+    }
+    #play{
+        width: 4vh ;
+        height: 4vh;
+    }
+    #next{
+        width: 4vh;
+        height: 4vh;
+    }
+    .close{
+        right: 5vw;;
+        top: 4vh;
+    }
+    
+
+
+
+    
+}
+
