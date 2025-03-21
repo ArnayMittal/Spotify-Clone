@@ -99,7 +99,7 @@ async function displayAlbums() {
 }
 
 async function main() {
-    songs = await getSongs("songs/2");
+    songs = await getSongs("tree/main/songs/2");
     console.log(songs);
     playMusic(songs[0].replaceAll("%20", " ").replaceAll("320 Kbps.mp3", " ").trim(), true);
     
